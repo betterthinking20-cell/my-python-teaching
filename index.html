@@ -1,14 +1,168 @@
-<!DOCTYPE html>
-<html lang="fa">
+<!doctype html>
+<html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>آموزش پایتون با [نام شما]</title>
-    <meta name="description" content="آموزش پایتون با [نام شما] - یادگیری ساده و سریع">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>آموزش پایتون — مهدی کانطوری</title>
+  <meta name="description" content="آموزش پایتون با مهدی کانطوری. کلاس‌های خصوصی و گروهی، پروژه‌محور و مناسب مبتدیان تا پیشرفته. تماس و هماهنگی: 09399651253">
+  <link rel="canonical" href="https://github.com/betterthinking20-cell/my-python-teaching">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="آموزش پایتون — مهدی کانطوری">
+  <meta property="og:description" content="آموزش پایتون با مهدی کانطوری. کلاس‌های خصوصی و گروهی، پروژه‌محور و مناسب مبتدیان تا پیشرفته.">
+  <meta property="og:url" content="https://github.com/betterthinking20-cell/my-python-teaching">
+  <meta property="og:image" content="https://github.com/betterthinking20-cell/my-python-teaching/avatar.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="آموزش پایتون — مهدی کانطوری">
+  <meta name="twitter:description" content="آموزش پایتون با مهدی کانطوری. کلاس‌های خصوصی و گروهی؛ پروژه‌محور.">
+  <meta name="twitter:image" content="https://github.com/betterthinking20-cell/my-python-teaching/avatar.jpg">
+
+  <!-- Fonts (Vazirmatn) -->
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --accent:#0b74de;
+      --dark:#0f1720;
+      --muted:#6b7280;
+      --card:#ffffff;
+      --bg:#f6f8fb;
+      --radius:12px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:"Vazirmatn",Tahoma,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--dark);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.6;
+    }
+    .wrap{max-width:920px;margin:28px auto;padding:20px;}
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:0 6px 22px rgba(16,24,40,0.06);padding:20px}
+    header{display:flex;gap:18px;align-items:center}
+    .avatar{
+      width:110px;height:110px;border-radius:14px;overflow:hidden;flex:0 0 110px;border:4px solid rgba(11,116,222,0.08)
+    }
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    h1{margin:0;font-size:22px}
+    .role{color:var(--muted);margin-top:6px}
+    .cta{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+    .btn{
+      display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:10px;border:0;cursor:pointer;
+      text-decoration:none;font-weight:600;color:white;background:var(--accent);
+      box-shadow:0 6px 18px rgba(11,116,222,0.16)
+    }
+    .btn.secondary{background:transparent;color:var(--accent);border:1px solid rgba(11,116,222,0.12)}
+    .contact-list{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+    .contact-item{background:#fbfdff;padding:10px 12px;border-radius:10px;border:1px solid rgba(15,23,32,0.03);display:inline-flex;align-items:center;gap:8px}
+    section{margin-top:18px}
+    h2{font-size:16px;margin:0 0 10px 0}
+    p.lead{color:var(--muted);margin:6px 0 14px 0}
+    pre{background:#0f1720;color:#e6edf3;padding:12px;border-radius:8px;overflow:auto;font-size:13px}
+    footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+
+    @media (max-width:640px){
+      header{flex-direction:row-reverse}
+      .avatar{width:84px;height:84px}
+    }
+  </style>
+
+  <!-- Structured data (schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "مهدی کانطوری",
+    "image": "https://github.com/betterthinking20-cell/my-python-teaching/avatar.jpg",
+    "description": "مدرس پایتون — آموزش پایتون از پایه تا پیشرفته، کلاس‌های خصوصی و گروهی، پروژه‌محور.",
+    "telephone": "09399651253",
+    "email": "mahdikantouri@yahoo.com",
+    "url": "https://github.com/betterthinking20-cell/my-python-teaching",
+    "sameAs": [
+      "https://t.me/@Kantouri"
+    ]
+  }
+  </script>
+
 </head>
-<body style="font-family:Tahoma; text-align:center; margin-top:50px;">
-    <h1>آموزش پایتون با [نام شما]</h1>
-    <p>سلام! من [نام شما] هستم و آموزش پایتون می‌دهم.</p>
-    <p>برای تماس: youremail@example.com</p>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <header>
+        <div class="avatar">
+          <!-- نام فایل عکس را عوض کن (مثلاً avatar.jpg) -->
+          <img src="avatar.jpg" alt="عکس مهدی کانطوری">
+        </div>
+        <div style="flex:1">
+          <h1>آموزش پایتون — <span style="color:var(--accent)">مهدی کانطوری</span></h1>
+          <div class="role">مدرس پایتون • کلاس‌های خصوصی و گروهی • پروژه‌محور</div>
+
+          <div class="cta">
+            <!-- دکمه تماس تلفنی کلیک‌شدنی -->
+            <a class="btn" href="tel:09399651253">📞 تماس سریع — 09399651253</a>
+
+            <!-- لینک تلگرام؛ اگر می‌خوای پیغام پیش‌فرض بذاری: https://t.me/TELEGRAM_ID?text=سلام -->
+            <a class="btn" style="background:#14aaf5" href="https://t.me/@Kantouri" target="_blank" rel="noopener">💬 تلگرام — @ @Kantouri</a>
+
+            <!-- ایمیل -->
+            <a class="btn secondary" href="mailto:mahdikantouri@yahoo.com">✉️ ایمیل</a>
+          </div>
+
+          <div class="contact-list" aria-hidden>
+            <div class="contact-item">⌛ تجربه: ۳+ سال</div>
+            <div class="contact-item">🎯 آموزش از پایه تا پروژه</div>
+            <div class="contact-item">🧑‍💻 آنلاین / حضوری (مشخص کن)</div>
+          </div>
+        </div>
+      </header>
+
+      <section>
+        <h2>دربارهٔ من</h2>
+        <p class="lead">
+          سلام، من <strong>مهدی کانطوری</strong> هستم. مدرس پایتون، با تجربه در پروژه‌های وب، داده‌کاوی و اتوماسیون.
+          شیوهٔ آموزش من عملی و پروژه‌محور است و کلاس‌ها برای مبتدیان و هم افراد پیشرفته مناسب است.
+        </p>
+      </section>
+
+      <section>
+        <h2>خدمات</h2>
+        <ul>
+          <li>آموزش پایتون پایه تا پیشرفته</li>
+          <li>کلاس‌های خصوصی و گروهی آنلاین</li>
+          <li>تمرین پروژه‌ای و ساخت نمونه‌کار</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>نمونه کد کوتاه</h2>
+        <p class="lead">مثال سادهٔ چاپ و جمع دو عدد در پایتون:</p>
+        <pre><code>num1 = int(input("عدد اول: "))
+num2 = int(input("عدد دوم: "))
+print("جمع:", num1 + num2)</code></pre>
+      </section>
+
+      <section>
+        <h2>تماس و هماهنگی</h2>
+        <p class="lead">برای هماهنگی سریع از طریق تلفن یا تلگرام پیام بدهید.</p>
+        <p style="margin:0.4rem 0"><strong>تلفن:</strong> <a href="tel:09399651253">09399651253</a></p>
+        <p style="margin:0.4rem 0"><strong>تلگرام:</strong> <a href="https://t.me/@Kantouri" target="_blank">@@Kantouri</a></p>
+        <p style="margin:0.4rem 0"><strong>ایمیل:</strong> <a href="mailto:mahdikantouri@yahoo.com">mahdikantouri@yahoo.com</a></p>
+      </section>
+
+      <footer>
+        © <span id="year"></span> مهدی کانطوری — طراحی ساده و کم‌حجم برای بارگذاری سریع
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    // فعلی کردن سال در فوتر
+    document.getElementById('year').innerText = new Date().getFullYear();
+  </script>
 </body>
 </html>
